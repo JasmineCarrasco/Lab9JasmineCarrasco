@@ -1,12 +1,13 @@
 ﻿Console.Clear();
+int TasksCreated = 0;
+int TasksRemoved = 0;
+int TasksCompleted = 0;
 List<(string, string, DateTime)> StartTasks = new List<(string, string, DateTime)>();
 Console.WriteLine("Welcome to your to-do program!");
 DateTime StartTime = new DateTime();
 List<(string, string, DateTime, DateTime)> CompleteTasks = new List<(string, string, DateTime, DateTime)>();
 DateTime CompletionTime = new DateTime();
-int TasksCreated = 0;
-int TasksRemoved = 0;
-int TasksCompleted = 0;
+
 
 //1
 
