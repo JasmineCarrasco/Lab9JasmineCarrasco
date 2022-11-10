@@ -28,7 +28,7 @@ void CompletedTasks(){
     Console.WriteLine($" {x + 1}: {CompleteTasks[x]}");
     }
     if(CompleteTasks.Count == 0)
-    Console.WriteLine("YThere are not tasks listed.");
+    Console.WriteLine("There are not tasks listed.");
     Console.ReadLine();
     TaskMenu();
 }
@@ -40,7 +40,7 @@ void AddingItems(){
         string response = Console.ReadLine();
         string Task = response;
         Console.WriteLine($"The name of the task is the following: {Task}");
-        Console.WriteLine("What is the description?");
+        Console.WriteLine("Enter a description of your task");
         response = Console.ReadLine();
         string Description = response;
         Console.WriteLine($"Task name: {Task}: {Description}");
@@ -63,11 +63,11 @@ void AddingItems(){
 //4
 
 void CompletingTasks(){
-    Console.WriteLine("WhatTask would you like to mark as complete?");
+    Console.WriteLine("What task would you like to mark as complete?");
     for(int x = 0; x <StartTasks.Count; x++){
         Console.WriteLine($" {x + 1}: {StartTasks[x]}");
     }
-    Console.WriteLine("(Enter the number.)");
+    Console.WriteLine("(Enter the number of the task.)");
     int NumComp = int.Parse(Console.ReadLine()) - 1;
     if(NumComp > StartTasks.Count){
         Console.WriteLine("Invalid Input");
